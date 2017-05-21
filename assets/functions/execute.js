@@ -8,9 +8,7 @@ var app = angular.module('app', ['ngMessages']);
         });
       });
     // POST 
-setInterval(function(){
-	var rand = Math.floor(Math.random() * 999999);
-},1);
+var rand = Math.floor(Math.random() * 999999);
 
 function post()
 {
@@ -25,12 +23,15 @@ function post()
 				url: url,
 				data: data,
 				success:function(response){
+
 					// $('button').html('Please wait...').attr('disabled',true);
 					// $('button').attr('disabled',true);
 					// $('button').html('<i class="fa fa-check-circle"></i> Submit');
 					// $('button').attr('disabled',true);
 					if (response == 'success') {
-						alert('Success!');
+						$('#postForm')[0].reset();
+						$('#notif').html('<span class="alert alert-success animated bounceIn flat col-md-12 col-xs-12"> Success!</span>').fadeIn().delay(3000).fadeOut('slow');
+
 					} 
 				}
 			});

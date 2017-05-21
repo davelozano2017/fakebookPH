@@ -31,7 +31,7 @@ $name = $udata['firstname']. ' ' .$udata['lastname'];
 
             </div>
 	        
-	        <form method="post">
+	        <form method="post" id='postForm'>
 	            <div class="box-body">
 
 	             	<textarea class="form-control costum"  id='comment' name='message' placeholder="What's on your mind?"></textarea>   
@@ -50,8 +50,7 @@ $name = $udata['firstname']. ' ' .$udata['lastname'];
 
     	</div>
 
-    	
-        <?php $this->load->view('templates/pages/member/newsfeed')?>
+        <div id="display">a</div>
 
           <!-- end -->
 

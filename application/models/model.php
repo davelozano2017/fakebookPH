@@ -52,7 +52,7 @@ class model extends CI_Model {
 			'f_account_tbl.picture, f_account_tbl.email, f_newsfeed_tbl.name,
 			 f_newsfeed_tbl.post_id, f_newsfeed_tbl.email, f_newsfeed_tbl.message,
 			 f_newsfeed_tbl.likes, f_newsfeed_tbl.date, f_newsfeed_tbl.id'
-			)->from('f_account_tbl')->join('f_newsfeed_tbl','f_account_tbl.email = f_newsfeed_tbl.email');
+			)->from('f_account_tbl')->join('f_newsfeed_tbl','f_account_tbl.email = f_newsfeed_tbl.email')->order_by('id','DESC');
 		$result = $this->db->get();
 		return $result->result();
 	}

@@ -55,5 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 // costum routes
 $route['home'] = 'member/home';
+$route['newsfeed'] = 'member/newsfeed';
 $route['modify/(:num)'] = 'member/modify/edit/$1';
 

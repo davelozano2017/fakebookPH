@@ -28,7 +28,22 @@
 	register();
 	login();
 	post();
-	delete_post();
+	// delete_post();
+
+
+
+ $(document).ready(function() {
+                  
+      $.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: "http://localhost/fakebookPH/newsfeed",          
+        async:true,   
+        dataType: "html",   //expect html to be returned                
+        success: function(response){                    
+            $("#display").html(response); 
+        }
+	});
+});
 </script>
 
 

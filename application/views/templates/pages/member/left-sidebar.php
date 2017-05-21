@@ -20,9 +20,13 @@
           <b>Friend Requests</b> <a class="pull-right">0</a>
         </li>
       </ul>
-        
-        <div class='col-md-12 col-xs-12' id='notif'></div>
+          <div class="row">
+            <div class='col-md-12 col-xs-12 flat' id='notif'></div>
+          </div>
+          <div class="clearfix"></div>
   	</div>
+
+  
   	<!-- end -->
 	</div>
 
